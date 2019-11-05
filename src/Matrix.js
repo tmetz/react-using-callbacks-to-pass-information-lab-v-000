@@ -15,6 +15,7 @@ export default class Matrix extends Component {
   getSelectedColor = () => {
     return this.state.color
   }
+
   genRow = (vals) => (
     vals.map((val, idx) => <Cell key={idx} color={val} getSelectedColor = {this.getSelectedColor} />)
   )
